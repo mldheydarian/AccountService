@@ -1,12 +1,15 @@
 package com.banking.accounts.domain.account.dto;
 
 import com.banking.accounts.domain.account.entity.EnumAccountType;
-import lombok.Data;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.util.Date;
 
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class AccountDto {
     private Integer customerId;
     private EnumAccountType enumAccountType;

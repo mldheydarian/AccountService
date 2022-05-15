@@ -14,6 +14,7 @@ import java.util.Date;
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class Account {
 
@@ -21,7 +22,11 @@ public abstract class Account {
     @GeneratedValue(strategy = GenerationType.AUTO)
     protected Integer id;
 
-    protected String accountNumber;
+    @Embedded
+    @AttributeOverrides({
+            @AttributeOverride( name = "number", column = @Column(name = "AccountNumber"))
+    })
+    protected AccountNumber accountNumber;
     protected BigDecimal initialCredit;
     @NotNull
     protected BigDecimal Balance;
