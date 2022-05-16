@@ -19,7 +19,7 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 public class AccountService implements IAccountService{
 
-
+    // The constructor is handled by Lombok
     final IAccountFactory accountFactory;
     final IAccountRepository accountRepository;
     final ITransactionService transactionService;

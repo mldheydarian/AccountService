@@ -3,10 +3,8 @@ package com.banking.accounts.domain.account.entity;
 import com.banking.accounts.domain.account.dto.AccountDto;
 import com.sun.istack.NotNull;
 import lombok.*;
-
 import javax.persistence.*;
 import java.math.BigDecimal;
-
 import java.util.Date;
 
 
@@ -22,10 +20,10 @@ public abstract class Account {
     @GeneratedValue(strategy = GenerationType.AUTO)
     protected Integer id;
 
-    @Embedded
+   /* @Embedded
     @AttributeOverrides({
             @AttributeOverride( name = "number", column = @Column(name = "AccountNumber"))
-    })
+    })*/
     protected AccountNumber accountNumber;
     protected BigDecimal initialCredit;
     @NotNull

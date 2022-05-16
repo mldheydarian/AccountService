@@ -19,7 +19,7 @@ class AccountFactoryTest {
 
 
     @BeforeEach
-    void beforeAll() {
+    void setUp() {
         accountFactory =new AccountFactory();
         Calendar calendar = Calendar.getInstance();
         calendar.set(1991, 9, 21 );

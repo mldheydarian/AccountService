@@ -32,16 +32,15 @@ import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 class AccountServiceTest {
 
     @MockBean
-    IAccountFactory accountFactory;
+    IAccountFactory mockAccountFactory;
     @MockBean
-    ITransactionFactory transactionFactory;
+    ITransactionService mockTransactionService;
     @MockBean
-    ITransactionService transactionService;
-    @MockBean
-    IAccountRepository accountRepository;
+    IAccountRepository mockAccountRepository;
 
     @Autowired
     IAccountService accountService;
+
     AccountDto accountDto;
     Account account;
     TransactionDto transactionDto;
@@ -52,7 +51,8 @@ class AccountServiceTest {
         Calendar calendar = Calendar.getInstance();
         calendar.set(1991, 9, 21 );
         accountDto = new AccountDto(1, EnumAccountType.CurrentAccount, BigDecimal.valueOf(10),"Arman.heydarian@gmail.com", calendar.getTime());
-        account= new CurrentAccount(accountDto);
+        IAccountFactory accountFactory = new AccountFactory();
+        account= accountFactory.createAccount(accountDto);
         account.setId(1);
         transactionDto = new TransactionDto(EnumTransactionStatus.Posted,"Account Initializing Deposit", EnumTransactionType.Deposit,account.getId(),account.getInitialCredit());
         initialTransaction =new DepositTransaction(transactionDto);
@@ -61,9 +61,9 @@ class AccountServiceTest {
     @Test
     void createAccount() {
         // Arrange
-        Mockito.when(accountFactory.createAccount(Mockito.any(AccountDto.class))).thenReturn(account);
-        Mockito.when(accountRepository.save(Mockito.any(Account.class))).thenReturn(account);
-        Mockito.when(transactionService.createTransaction(Mockito.any(TransactionDto.class))).thenReturn(initialTransaction);
+        Mockito.when(mockAccountFactory.createAccount(Mockito.any(AccountDto.class))).thenReturn(account);
+        Mockito.when(mockAccountRepository.save(Mockito.any(Account.class))).thenReturn(account);
+        Mockito.when(mockTransactionService.createTransaction(Mockito.any(TransactionDto.class))).thenReturn(initialTransaction);
         //Action
         account = accountService.createAccount(accountDto);
 
