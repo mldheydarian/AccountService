@@ -7,6 +7,7 @@ import lombok.Setter;
 
 import javax.persistence.Embeddable;
 import javax.persistence.OneToOne;
+import javax.validation.constraints.NotEmpty;
 import java.util.UUID;
 
 @Getter
@@ -14,6 +15,8 @@ import java.util.UUID;
 @NoArgsConstructor
 @Embeddable
 public class AccountNumber {
+
+    @NotEmpty
     public String number;
 
     public AccountNumber(EnumAccountType enumAccountType) {
