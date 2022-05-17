@@ -12,6 +12,7 @@ import java.util.Optional;
 @AllArgsConstructor
 public class CustomerService implements ICustomerService {
     final ICustomerRepository customerRepository;
+
     public Optional<Customer> getCustomerById(Integer customerId)
     {
         Optional<Customer> customer = customerRepository.findById(customerId);
