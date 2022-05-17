@@ -30,8 +30,8 @@ class TransactionFactoryTest {
     @BeforeEach
     void setUp() {
         transactionFactory =new TransactionFactory();
-        depositTransactionDto = new TransactionDto(EnumTransactionStatus.Posted,"Deposit Money", EnumTransactionType.Deposit,1,BigDecimal.valueOf(10));
-        withdrawTransactionDto = new TransactionDto(EnumTransactionStatus.Posted,"WithDraw Money", EnumTransactionType.WithDraw,1,BigDecimal.valueOf(20));
+        depositTransactionDto = new TransactionDto(EnumTransactionType.Deposit,EnumTransactionStatus.Posted, BigDecimal.valueOf(10),1, "Deposit Money");
+        withdrawTransactionDto = new TransactionDto(EnumTransactionType.WithDraw,EnumTransactionStatus.Posted, BigDecimal.valueOf(20),1,"WithDraw Money");
     }
 
     @Test

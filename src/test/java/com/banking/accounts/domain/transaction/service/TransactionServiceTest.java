@@ -39,8 +39,8 @@ class TransactionServiceTest {
     Transaction persistedTransaction ;
     @BeforeEach
     void setUp() {
-        depositTransactionDto = new TransactionDto(EnumTransactionStatus.Posted,"Deposit to Account", EnumTransactionType.Deposit,1, BigDecimal.valueOf(20));
-        withDrawTransactionDto = new TransactionDto(EnumTransactionStatus.Posted,"Deposit to Account", EnumTransactionType.WithDraw,1, BigDecimal.valueOf(20));
+        depositTransactionDto = new TransactionDto( EnumTransactionType.Deposit, EnumTransactionStatus.Posted, BigDecimal.valueOf(20),1,"Deposit to Account");
+        withDrawTransactionDto = new TransactionDto( EnumTransactionType.WithDraw, EnumTransactionStatus.Posted, BigDecimal.valueOf(20),1,"Withdraw from Account");
 
         TransactionFactory transactionFactory = new TransactionFactory();
         newDepositTransaction = transactionFactory.createTransaction(depositTransactionDto);
