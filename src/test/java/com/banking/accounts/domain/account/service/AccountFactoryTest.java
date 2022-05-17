@@ -6,8 +6,11 @@ import com.banking.accounts.domain.account.repository.IAccountRepository;
 import com.banking.accounts.domain.account.repository.IAccountTypeRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
 import org.mockito.Mockito;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 import java.math.BigDecimal;
@@ -15,7 +18,8 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-
+@RunWith(SpringRunner.class)
+@SpringBootTest()
 class AccountFactoryTest {
 
     @MockBean
@@ -33,7 +37,6 @@ class AccountFactoryTest {
         calendar.set(1991, 9, 21 );
         currentAccountDto = new AccountDto(1, EnumAccountType.CurrentAccount, BigDecimal.valueOf(10),"Arman.heydarian@gmail.com", calendar.getTime());
         savingAccountDto = new AccountDto(1, EnumAccountType.SavingAccount, BigDecimal.valueOf(10),"Arman.heydarian@gmail.com", calendar.getTime());
-        currentAccountDto = new AccountDto(1, EnumAccountType.CurrentAccount, BigDecimal.valueOf(10),"Arman.heydarian@gmail.com", calendar.getTime());
         accountTypeList = new ArrayList<AccountType>(){{
              add(new AccountType((long)1,EnumAccountType.CurrentAccount,BigDecimal.valueOf(100)));
              add(new AccountType((long)2,EnumAccountType.SavingAccount,BigDecimal.valueOf(100)));
