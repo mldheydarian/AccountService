@@ -13,13 +13,15 @@ public class SavingAccount extends Account {
     protected BigDecimal withdrawLimit;
     protected Double interestRate;
 
-    public SavingAccount(AccountDto accountDto) {
+    public SavingAccount(AccountDto accountDto, AccountType accountType) {
         super(accountDto);
-        System.out.println("New Saving Account Added");
+        this.accountType = accountType;
+        this.accountNumber = new AccountNumber(EnumAccountType.SavingAccount);
     }
 
     @Override
     public void updateBalance(BigDecimal newAmount) {
+
         this.Balance = this.Balance.add(newAmount) ;
     }
 

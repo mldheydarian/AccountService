@@ -1,9 +1,11 @@
 package com.banking.accounts.domain.account.entity;
 
 import com.banking.accounts.domain.account.dto.AccountDto;
-import com.sun.istack.NotNull;
 import lombok.*;
+import org.hibernate.validator.constraints.NotEmpty;
+
 import javax.persistence.*;
+import javax.validation.constraints.*;
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -24,27 +26,33 @@ public abstract class Account {
     @AttributeOverrides({
             @AttributeOverride( name = "number", column = @Column(name = "AccountNumber"))
     })*/
-    protected AccountNumber accountNumber;
-    protected BigDecimal initialCredit;
     @NotNull
+    protected AccountNumber accountNumber;
+
+    @NotNull
+    @DecimalMin(value = "0.0")
+    protected BigDecimal initialCredit;
+
+    @NotNull
+    @DecimalMin(value = "0.0")
     protected BigDecimal Balance;
+
     protected AccountStatus status;
-    protected String email;   // Todo: change to VO
     protected Date createdDate;
-    protected Date birthDate;
+
+    @NotNull
     protected Integer customerId;
 
-    @ManyToOne(cascade = {CascadeType.ALL})
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "account_type_id")
-    private AccountType accountType;
+    protected AccountType accountType;
 
     public Account(AccountDto accountDto)
     {
         customerId = accountDto.getCustomerId();
         initialCredit= accountDto.getInitialCredit();
-        email= accountDto.getEmail();
-        birthDate= accountDto.getBirthDate();
-        accountType = new AccountType(accountDto.getEnumAccountType());
+        status = AccountStatus.Active;
+        createdDate = new Date();
         setBalance(BigDecimal.ZERO);
     }
 
