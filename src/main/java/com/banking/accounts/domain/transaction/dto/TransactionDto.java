@@ -7,6 +7,10 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import javax.validation.constraints.DecimalMin;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
 
@@ -15,11 +19,22 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @AllArgsConstructor
 public class TransactionDto {
-
-    private EnumTransactionStatus status;
-    private String description;
+    @NotNull
     private EnumTransactionType enumTransactionType;
-    private Integer accountId;
+
+    @NotNull
+    private EnumTransactionStatus status;
+
+
+    @NotNull
+    @DecimalMin(value = "0.0")
     private BigDecimal amount;
+    @NotNull
+    private Integer accountId;
+
+    private String description;
+
+
+
 
 }

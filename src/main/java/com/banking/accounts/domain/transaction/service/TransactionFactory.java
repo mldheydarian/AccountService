@@ -1,5 +1,6 @@
 package com.banking.accounts.domain.transaction.service;
 
+import com.banking.accounts.application.exception.RecordNotFoundException;
 import com.banking.accounts.domain.account.entity.CurrentAccount;
 import com.banking.accounts.domain.transaction.dto.TransactionDto;
 import com.banking.accounts.domain.transaction.entity.DepositTransaction;
@@ -17,6 +18,6 @@ public class TransactionFactory implements ITransactionFactory{
             case WithDraw:
                 return new WithdrawTransaction(transactionDto);
         }
-        return null; // TODO: throw exception
+        throw new RecordNotFoundException("This Type of Account Is not Ready now");
     }
 }

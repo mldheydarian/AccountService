@@ -5,6 +5,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import javax.validation.constraints.DecimalMin;
+import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -16,13 +18,23 @@ public abstract class Transaction {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     protected Integer id;
+
+    @NotNull
+    @DecimalMin(value = "0.0")
     protected BigDecimal transactionAmount;
+
+    @NotNull
+    @DecimalMin(value = "0.0")
     protected BigDecimal finalAmount;
+
+    @NotNull
     protected EnumTransactionStatus status;
-    protected Date postingDate;
-    protected String description;
+
+    @NotNull
     protected Integer accountId;
 
+    protected Date postingDate;
+    protected String description;
 
     public Transaction(EnumTransactionStatus status, String description , Integer accountId ) {
         this.status = status;
