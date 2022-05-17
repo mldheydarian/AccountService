@@ -1,5 +1,6 @@
 package com.banking.accounts.domain.account.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -13,8 +14,8 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 public class AccountType {
+    @JsonIgnore
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @Enumerated(EnumType.STRING)
@@ -22,11 +23,15 @@ public class AccountType {
 
     private BigDecimal minBalance;
 
-    @OneToMany(mappedBy = "accountType" ,cascade = CascadeType.ALL)
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "accountType", fetch = FetchType.LAZY)
     private List<Account> accounts;
 
-    public AccountType(EnumAccountType enumAccountType) {
-        this.enumAccountType = enumAccountType;
-    }
 
+    public AccountType(Long id, EnumAccountType enumAccountType, BigDecimal minBalance) {
+        this.id = id;
+        this.enumAccountType = enumAccountType;
+        this.minBalance = minBalance;
+    }
 }
