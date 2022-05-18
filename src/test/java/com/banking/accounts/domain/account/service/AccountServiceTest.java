@@ -6,13 +6,6 @@ import com.banking.accounts.domain.account.entity.AccountType;
 import com.banking.accounts.domain.account.entity.CurrentAccount;
 import com.banking.accounts.domain.account.entity.EnumAccountType;
 import com.banking.accounts.domain.account.repository.IAccountRepository;
-import com.banking.accounts.domain.transaction.dto.TransactionDto;
-import com.banking.accounts.domain.transaction.entity.DepositTransaction;
-import com.banking.accounts.domain.transaction.entity.EnumTransactionStatus;
-import com.banking.accounts.domain.transaction.entity.EnumTransactionType;
-import com.banking.accounts.domain.transaction.entity.Transaction;
-import com.banking.accounts.domain.transaction.service.ITransactionFactory;
-import com.banking.accounts.domain.transaction.service.ITransactionService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -36,8 +29,6 @@ class AccountServiceTest {
     @MockBean
     IAccountFactory mockAccountFactory;
     @MockBean
-    ITransactionService mockTransactionService;
-    @MockBean
     IAccountRepository mockAccountRepository;
 
     @Autowired
@@ -45,8 +36,6 @@ class AccountServiceTest {
 
     AccountDto currentAccountDto;
     Account currentAccount;
-    TransactionDto transactionDto;
-    Transaction initialTransaction;
 
     @BeforeEach
     public void setUp() {
@@ -59,8 +48,6 @@ class AccountServiceTest {
         currentAccountDto = new AccountDto(1, EnumAccountType.CurrentAccount, BigDecimal.valueOf(10),"Arman.heydarian@gmail.com", calendar.getTime());
         currentAccount = new CurrentAccount(currentAccountDto,accountTypeList.get(0));
         currentAccount.setId(1);
-        transactionDto = new TransactionDto(EnumTransactionType.Deposit,EnumTransactionStatus.Posted,currentAccount.getInitialCredit(),currentAccount.getId(),"Account Initializing Deposit" );
-        initialTransaction =new DepositTransaction(transactionDto);
     }
 
     @Test
@@ -68,7 +55,6 @@ class AccountServiceTest {
         // Arrange
         Mockito.when(mockAccountFactory.createAccount(Mockito.any(AccountDto.class))).thenReturn(currentAccount);
         Mockito.when(mockAccountRepository.save(Mockito.any(Account.class))).thenReturn(currentAccount);
-        Mockito.when(mockTransactionService.createTransaction(Mockito.any(TransactionDto.class))).thenReturn(initialTransaction);
         //Action
         currentAccount = accountService.createAccount(currentAccountDto);
 
