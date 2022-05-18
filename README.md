@@ -1,10 +1,10 @@
 # Account Service
 This is a Java based Account Service which consists an API set for Adding Different Accounts including Current and Saving as well getting Customer Accounts.
-All the required specification are done completely int this Microservice
+All the defined specification are done completely
 
 #### Design:
 I have used Domain Driven Design Approach to making an extensible and clean architecture. so tha it could be work in Microservice environment with minimum effort.
-I have tried to decouple subdomain as Account Domain, Transaction Domain and Customer Doamin.
+I have tried to decouple subdomain as Account Domain, Transaction Domain and Customer Domain.
 An orchestrator layer is designed between API and Domains for handling application request and orchestrating decoupled domain service
 
 #### Layers:
