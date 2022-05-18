@@ -10,10 +10,12 @@ import net.bytebuddy.implementation.bytecode.Throw;
 import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.Optional;
 
 @Service
 @AllArgsConstructor
+@Transactional
 public class TransactionService implements ITransactionService {
 
 
