@@ -1,0 +1,118 @@
+[INFO ] 2022-05-18 04:33:51.274 [main] AccountApplicationTests - Starting AccountApplicationTests using Java 1.8.0_322 on DESKTOP-7AARSN1 with PID 6748 (started by Arman in E:\Intelij\BlueHarvest\Accounts)
+[INFO ] 2022-05-18 04:33:51.287 [main] AccountApplicationTests - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-05-18 04:34:05.601 [main] AccountApplicationTests - Started AccountApplicationTests in 14.821 seconds (JVM running for 18.62)
+[INFO ] 2022-05-18 04:34:06.076 [main] AccountControllerTest - Starting AccountControllerTest using Java 1.8.0_322 on DESKTOP-7AARSN1 with PID 6748 (started by Arman in E:\Intelij\BlueHarvest\Accounts)
+[INFO ] 2022-05-18 04:34:06.079 [main] AccountControllerTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-05-18 04:34:10.168 [main] AccountControllerTest - Started AccountControllerTest in 4.155 seconds (JVM running for 23.186)
+[INFO ] 2022-05-18 04:34:10.596 [main] AccountController - Account API Request: AccountDto : com.banking.accounts.domain.account.dto.AccountDto@6c502018
+[INFO ] 2022-05-18 04:34:10.904 [main] CustomerControllerTest - Starting CustomerControllerTest using Java 1.8.0_322 on DESKTOP-7AARSN1 with PID 6748 (started by Arman in E:\Intelij\BlueHarvest\Accounts)
+[INFO ] 2022-05-18 04:34:10.908 [main] CustomerControllerTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-05-18 04:34:14.473 [main] CustomerControllerTest - Started CustomerControllerTest in 3.637 seconds (JVM running for 27.491)
+[INFO ] 2022-05-18 04:34:14.603 [main] AccountAppServiceTest - Starting AccountAppServiceTest using Java 1.8.0_322 on DESKTOP-7AARSN1 with PID 6748 (started by Arman in E:\Intelij\BlueHarvest\Accounts)
+[INFO ] 2022-05-18 04:34:14.608 [main] AccountAppServiceTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-05-18 04:34:17.949 [main] AccountAppServiceTest - Started AccountAppServiceTest in 3.39 seconds (JVM running for 30.968)
+[INFO ] 2022-05-18 04:34:18.072 [main] AccountFactoryTest - Starting AccountFactoryTest using Java 1.8.0_322 on DESKTOP-7AARSN1 with PID 6748 (started by Arman in E:\Intelij\BlueHarvest\Accounts)
+[INFO ] 2022-05-18 04:34:18.073 [main] AccountFactoryTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-05-18 04:34:21.799 [main] AccountFactoryTest - Started AccountFactoryTest in 3.761 seconds (JVM running for 34.818)
+[INFO ] 2022-05-18 04:34:21.885 [main] AccountServiceTest - Starting AccountServiceTest using Java 1.8.0_322 on DESKTOP-7AARSN1 with PID 6748 (started by Arman in E:\Intelij\BlueHarvest\Accounts)
+[INFO ] 2022-05-18 04:34:21.887 [main] AccountServiceTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-05-18 04:34:25.030 [main] AccountServiceTest - Started AccountServiceTest in 3.183 seconds (JVM running for 38.048)
+[INFO ] 2022-05-18 04:34:25.054 [main] AccountService - A new Account added successfully, Account Number : com.banking.accounts.domain.account.entity.AccountNumber@45dac901
+[INFO ] 2022-05-18 04:34:25.129 [main] CustomerServiceTest - Starting CustomerServiceTest using Java 1.8.0_322 on DESKTOP-7AARSN1 with PID 6748 (started by Arman in E:\Intelij\BlueHarvest\Accounts)
+[INFO ] 2022-05-18 04:34:25.131 [main] CustomerServiceTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-05-18 04:34:28.275 [main] CustomerServiceTest - Started CustomerServiceTest in 3.184 seconds (JVM running for 41.294)
+[INFO ] 2022-05-18 04:34:28.350 [main] TransactionServiceTest - Starting TransactionServiceTest using Java 1.8.0_322 on DESKTOP-7AARSN1 with PID 6748 (started by Arman in E:\Intelij\BlueHarvest\Accounts)
+[INFO ] 2022-05-18 04:34:28.352 [main] TransactionServiceTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-05-18 04:34:31.453 [main] TransactionServiceTest - Started TransactionServiceTest in 3.134 seconds (JVM running for 44.472)
+[INFO ] 2022-05-18 04:34:31.479 [main] TransactionService - A New Transaction Saved successfully, Transaction ID : 1
+[INFO ] 2022-05-18 04:34:31.492 [main] TransactionService - A New Transaction Saved successfully, Transaction ID : 1
+[INFO ] 2022-05-18 04:34:31.580 [main] AccountIntegrationTest - Starting AccountIntegrationTest using Java 1.8.0_322 on DESKTOP-7AARSN1 with PID 6748 (started by Arman in E:\Intelij\BlueHarvest\Accounts)
+[INFO ] 2022-05-18 04:34:31.582 [main] AccountIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-05-18 04:34:34.565 [main] AccountIntegrationTest - Started AccountIntegrationTest in 3.039 seconds (JVM running for 47.584)
+[INFO ] 2022-05-18 04:34:34.625 [main] AccountController - Account API Request: AccountDto : com.banking.accounts.domain.account.dto.AccountDto@38e27eb9
+[INFO ] 2022-05-18 04:34:35.057 [main] AccountService - A new Account added successfully, Account Number : com.banking.accounts.domain.account.entity.AccountNumber@43fd117c
+[INFO ] 2022-05-18 04:34:35.063 [main] TransactionService - A New Transaction Saved successfully, Transaction ID : 2
+[INFO ] 2022-05-18 04:34:35.071 [main] AccountService - Account Balance with Number:com.banking.accounts.domain.account.entity.AccountNumber@43fd117chas been updated
+[INFO ] 2022-05-18 04:34:35.084 [main] TransactionService - Transaction Status Updated to :Confirmed successfully, Transaction ID : 2
+[INFO ] 2022-05-18 04:34:35.255 [main] CustomerIntegrationTest - Starting CustomerIntegrationTest using Java 1.8.0_322 on DESKTOP-7AARSN1 with PID 6748 (started by Arman in E:\Intelij\BlueHarvest\Accounts)
+[INFO ] 2022-05-18 04:34:35.256 [main] CustomerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-05-18 04:34:38.964 [main] CustomerIntegrationTest - Started CustomerIntegrationTest in 3.77 seconds (JVM running for 51.982)
+[INFO ] 2022-05-18 04:36:50.375 [main] AccountIntegrationTest - Starting AccountIntegrationTest using Java 1.8.0_322 on DESKTOP-7AARSN1 with PID 14512 (started by Arman in E:\Intelij\BlueHarvest\Accounts)
+[INFO ] 2022-05-18 04:36:50.384 [main] AccountIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-05-18 04:37:07.394 [main] AccountIntegrationTest - Started AccountIntegrationTest in 17.622 seconds (JVM running for 21.931)
+[INFO ] 2022-05-18 04:37:12.951 [main] AccountController - Account API Request: AccountDto : com.banking.accounts.domain.account.dto.AccountDto@31aa9b01
+[ERROR] 2022-05-18 04:37:35.152 [main] SqlExceptionHelper - Table "ACCOUNT_TYPE" not found; SQL statement:
+select accounttyp0_.id as id1_1_, accounttyp0_.enum_account_type as enum_acc2_1_, accounttyp0_.min_balance as min_bala3_1_ from account_type accounttyp0_ [42102-200]
+[ERROR] 2022-05-18 04:37:44.219 [main] CustomExceptionHandler - ApiError(status=500 INTERNAL_SERVER_ERROR, message=could not prepare statement; SQL [select accounttyp0_.id as id1_1_, accounttyp0_.enum_account_type as enum_acc2_1_, accounttyp0_.min_balance as min_bala3_1_ from account_type accounttyp0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement, errors=[could not prepare statement; SQL [select accounttyp0_.id as id1_1_, accounttyp0_.enum_account_type as enum_acc2_1_, accounttyp0_.min_balance as min_bala3_1_ from account_type accounttyp0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement])
+[ERROR] 2022-05-18 04:37:44.219 [main] CustomExceptionHandler - ApiError(status=500 INTERNAL_SERVER_ERROR, message=could not prepare statement; SQL [select accounttyp0_.id as id1_1_, accounttyp0_.enum_account_type as enum_acc2_1_, accounttyp0_.min_balance as min_bala3_1_ from account_type accounttyp0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement, errors=[could not prepare statement; SQL [select accounttyp0_.id as id1_1_, accounttyp0_.enum_account_type as enum_acc2_1_, accounttyp0_.min_balance as min_bala3_1_ from account_type accounttyp0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement])
+[INFO ] 2022-05-18 04:38:13.992 [main] AccountIntegrationTest - Starting AccountIntegrationTest using Java 1.8.0_322 on DESKTOP-7AARSN1 with PID 14464 (started by Arman in E:\Intelij\BlueHarvest\Accounts)
+[INFO ] 2022-05-18 04:38:14.000 [main] AccountIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-05-18 04:38:31.931 [main] AccountIntegrationTest - Started AccountIntegrationTest in 18.626 seconds (JVM running for 24.06)
+[INFO ] 2022-05-18 04:38:32.534 [main] AccountController - Account API Request: AccountDto : com.banking.accounts.domain.account.dto.AccountDto@31aa9b01
+[ERROR] 2022-05-18 04:38:37.030 [main] SqlExceptionHelper - Table "ACCOUNT_TYPE" not found; SQL statement:
+select accounttyp0_.id as id1_1_, accounttyp0_.enum_account_type as enum_acc2_1_, accounttyp0_.min_balance as min_bala3_1_ from account_type accounttyp0_ [42102-200]
+[ERROR] 2022-05-18 04:38:37.046 [main] CustomExceptionHandler - ApiError(status=500 INTERNAL_SERVER_ERROR, message=could not prepare statement; SQL [select accounttyp0_.id as id1_1_, accounttyp0_.enum_account_type as enum_acc2_1_, accounttyp0_.min_balance as min_bala3_1_ from account_type accounttyp0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement, errors=[could not prepare statement; SQL [select accounttyp0_.id as id1_1_, accounttyp0_.enum_account_type as enum_acc2_1_, accounttyp0_.min_balance as min_bala3_1_ from account_type accounttyp0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement])
+[ERROR] 2022-05-18 04:38:37.046 [main] CustomExceptionHandler - ApiError(status=500 INTERNAL_SERVER_ERROR, message=could not prepare statement; SQL [select accounttyp0_.id as id1_1_, accounttyp0_.enum_account_type as enum_acc2_1_, accounttyp0_.min_balance as min_bala3_1_ from account_type accounttyp0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement, errors=[could not prepare statement; SQL [select accounttyp0_.id as id1_1_, accounttyp0_.enum_account_type as enum_acc2_1_, accounttyp0_.min_balance as min_bala3_1_ from account_type accounttyp0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement])
+[INFO ] 2022-05-18 04:38:52.330 [main] AccountIntegrationTest - Starting AccountIntegrationTest using Java 1.8.0_322 on DESKTOP-7AARSN1 with PID 6748 (started by Arman in E:\Intelij\BlueHarvest\Accounts)
+[INFO ] 2022-05-18 04:38:52.340 [main] AccountIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-05-18 04:39:08.224 [main] AccountIntegrationTest - Started AccountIntegrationTest in 16.535 seconds (JVM running for 20.918)
+[INFO ] 2022-05-18 04:39:08.964 [main] AccountController - Account API Request: AccountDto : com.banking.accounts.domain.account.dto.AccountDto@31aa9b01
+[ERROR] 2022-05-18 04:39:39.739 [main] SqlExceptionHelper - Table "ACCOUNT_TYPE" not found; SQL statement:
+select accounttyp0_.id as id1_1_, accounttyp0_.enum_account_type as enum_acc2_1_, accounttyp0_.min_balance as min_bala3_1_ from account_type accounttyp0_ [42102-200]
+[ERROR] 2022-05-18 04:40:36.358 [main] CustomExceptionHandler - ApiError(status=500 INTERNAL_SERVER_ERROR, message=could not prepare statement; SQL [select accounttyp0_.id as id1_1_, accounttyp0_.enum_account_type as enum_acc2_1_, accounttyp0_.min_balance as min_bala3_1_ from account_type accounttyp0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement, errors=[could not prepare statement; SQL [select accounttyp0_.id as id1_1_, accounttyp0_.enum_account_type as enum_acc2_1_, accounttyp0_.min_balance as min_bala3_1_ from account_type accounttyp0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement])
+[ERROR] 2022-05-18 04:40:36.358 [main] CustomExceptionHandler - ApiError(status=500 INTERNAL_SERVER_ERROR, message=could not prepare statement; SQL [select accounttyp0_.id as id1_1_, accounttyp0_.enum_account_type as enum_acc2_1_, accounttyp0_.min_balance as min_bala3_1_ from account_type accounttyp0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement, errors=[could not prepare statement; SQL [select accounttyp0_.id as id1_1_, accounttyp0_.enum_account_type as enum_acc2_1_, accounttyp0_.min_balance as min_bala3_1_ from account_type accounttyp0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement])
+[INFO ] 2022-05-18 04:40:54.464 [main] AccountIntegrationTest - Starting AccountIntegrationTest using Java 1.8.0_322 on DESKTOP-7AARSN1 with PID 15244 (started by Arman in E:\Intelij\BlueHarvest\Accounts)
+[INFO ] 2022-05-18 04:40:54.474 [main] AccountIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-05-18 04:41:11.972 [main] AccountIntegrationTest - Started AccountIntegrationTest in 18.047 seconds (JVM running for 23.077)
+[INFO ] 2022-05-18 04:41:12.652 [main] AccountController - Account API Request: AccountDto : com.banking.accounts.domain.account.dto.AccountDto@31aa9b01
+[ERROR] 2022-05-18 04:41:31.955 [main] SqlExceptionHelper - Table "ACCOUNT_TYPE" not found; SQL statement:
+select accounttyp0_.id as id1_1_, accounttyp0_.enum_account_type as enum_acc2_1_, accounttyp0_.min_balance as min_bala3_1_ from account_type accounttyp0_ [42102-200]
+[ERROR] 2022-05-18 04:41:31.969 [main] CustomExceptionHandler - ApiError(status=500 INTERNAL_SERVER_ERROR, message=could not prepare statement; SQL [select accounttyp0_.id as id1_1_, accounttyp0_.enum_account_type as enum_acc2_1_, accounttyp0_.min_balance as min_bala3_1_ from account_type accounttyp0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement, errors=[could not prepare statement; SQL [select accounttyp0_.id as id1_1_, accounttyp0_.enum_account_type as enum_acc2_1_, accounttyp0_.min_balance as min_bala3_1_ from account_type accounttyp0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement])
+[ERROR] 2022-05-18 04:41:31.969 [main] CustomExceptionHandler - ApiError(status=500 INTERNAL_SERVER_ERROR, message=could not prepare statement; SQL [select accounttyp0_.id as id1_1_, accounttyp0_.enum_account_type as enum_acc2_1_, accounttyp0_.min_balance as min_bala3_1_ from account_type accounttyp0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement, errors=[could not prepare statement; SQL [select accounttyp0_.id as id1_1_, accounttyp0_.enum_account_type as enum_acc2_1_, accounttyp0_.min_balance as min_bala3_1_ from account_type accounttyp0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement])
+[INFO ] 2022-05-18 04:41:57.667 [main] AccountApplicationTests - Starting AccountApplicationTests using Java 1.8.0_322 on DESKTOP-7AARSN1 with PID 15152 (started by Arman in E:\Intelij\BlueHarvest\Accounts)
+[INFO ] 2022-05-18 04:41:57.676 [main] AccountApplicationTests - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-05-18 04:42:12.117 [main] AccountApplicationTests - Started AccountApplicationTests in 14.9 seconds (JVM running for 18.423)
+[INFO ] 2022-05-18 04:42:12.609 [main] AccountControllerTest - Starting AccountControllerTest using Java 1.8.0_322 on DESKTOP-7AARSN1 with PID 15152 (started by Arman in E:\Intelij\BlueHarvest\Accounts)
+[INFO ] 2022-05-18 04:42:12.612 [main] AccountControllerTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-05-18 04:42:16.758 [main] AccountControllerTest - Started AccountControllerTest in 4.227 seconds (JVM running for 23.065)
+[INFO ] 2022-05-18 04:42:17.122 [main] AccountController - Account API Request: AccountDto : com.banking.accounts.domain.account.dto.AccountDto@6c502018
+[INFO ] 2022-05-18 04:42:17.354 [main] CustomerControllerTest - Starting CustomerControllerTest using Java 1.8.0_322 on DESKTOP-7AARSN1 with PID 15152 (started by Arman in E:\Intelij\BlueHarvest\Accounts)
+[INFO ] 2022-05-18 04:42:17.358 [main] CustomerControllerTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-05-18 04:42:20.644 [main] CustomerControllerTest - Started CustomerControllerTest in 3.34 seconds (JVM running for 26.951)
+[INFO ] 2022-05-18 04:42:20.759 [main] AccountAppServiceTest - Starting AccountAppServiceTest using Java 1.8.0_322 on DESKTOP-7AARSN1 with PID 15152 (started by Arman in E:\Intelij\BlueHarvest\Accounts)
+[INFO ] 2022-05-18 04:42:20.761 [main] AccountAppServiceTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-05-18 04:42:23.878 [main] AccountAppServiceTest - Started AccountAppServiceTest in 3.161 seconds (JVM running for 30.185)
+[INFO ] 2022-05-18 04:42:24.024 [main] AccountFactoryTest - Starting AccountFactoryTest using Java 1.8.0_322 on DESKTOP-7AARSN1 with PID 15152 (started by Arman in E:\Intelij\BlueHarvest\Accounts)
+[INFO ] 2022-05-18 04:42:24.026 [main] AccountFactoryTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-05-18 04:42:27.059 [main] AccountFactoryTest - Started AccountFactoryTest in 3.084 seconds (JVM running for 33.366)
+[INFO ] 2022-05-18 04:42:27.135 [main] AccountServiceTest - Starting AccountServiceTest using Java 1.8.0_322 on DESKTOP-7AARSN1 with PID 15152 (started by Arman in E:\Intelij\BlueHarvest\Accounts)
+[INFO ] 2022-05-18 04:42:27.138 [main] AccountServiceTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-05-18 04:42:30.052 [main] AccountServiceTest - Started AccountServiceTest in 2.952 seconds (JVM running for 36.359)
+[INFO ] 2022-05-18 04:42:30.076 [main] AccountService - A new Account added successfully, Account Number : com.banking.accounts.domain.account.entity.AccountNumber@55cb0354
+[INFO ] 2022-05-18 04:42:30.151 [main] CustomerServiceTest - Starting CustomerServiceTest using Java 1.8.0_322 on DESKTOP-7AARSN1 with PID 15152 (started by Arman in E:\Intelij\BlueHarvest\Accounts)
+[INFO ] 2022-05-18 04:42:30.154 [main] CustomerServiceTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-05-18 04:42:33.064 [main] CustomerServiceTest - Started CustomerServiceTest in 2.953 seconds (JVM running for 39.371)
+[INFO ] 2022-05-18 04:42:33.150 [main] TransactionServiceTest - Starting TransactionServiceTest using Java 1.8.0_322 on DESKTOP-7AARSN1 with PID 15152 (started by Arman in E:\Intelij\BlueHarvest\Accounts)
+[INFO ] 2022-05-18 04:42:33.152 [main] TransactionServiceTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-05-18 04:42:35.802 [main] TransactionServiceTest - Started TransactionServiceTest in 2.687 seconds (JVM running for 42.109)
+[INFO ] 2022-05-18 04:42:35.830 [main] TransactionService - A New Transaction Saved successfully, Transaction ID : 1
+[INFO ] 2022-05-18 04:42:35.842 [main] TransactionService - A New Transaction Saved successfully, Transaction ID : 1
+[INFO ] 2022-05-18 04:42:35.919 [main] AccountIntegrationTest - Starting AccountIntegrationTest using Java 1.8.0_322 on DESKTOP-7AARSN1 with PID 15152 (started by Arman in E:\Intelij\BlueHarvest\Accounts)
+[INFO ] 2022-05-18 04:42:35.922 [main] AccountIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-05-18 04:42:38.575 [main] AccountIntegrationTest - Started AccountIntegrationTest in 2.703 seconds (JVM running for 44.881)
+[INFO ] 2022-05-18 04:42:38.622 [main] AccountController - Account API Request: AccountDto : com.banking.accounts.domain.account.dto.AccountDto@3ae62c8a
+[INFO ] 2022-05-18 04:42:39.002 [main] AccountService - A new Account added successfully, Account Number : com.banking.accounts.domain.account.entity.AccountNumber@315d4207
+[INFO ] 2022-05-18 04:42:39.008 [main] TransactionService - A New Transaction Saved successfully, Transaction ID : 2
+[INFO ] 2022-05-18 04:42:39.017 [main] AccountService - Account Balance with Number:com.banking.accounts.domain.account.entity.AccountNumber@315d4207has been updated
+[INFO ] 2022-05-18 04:42:39.030 [main] TransactionService - Transaction Status Updated to :Confirmed successfully, Transaction ID : 2
+[INFO ] 2022-05-18 04:42:39.195 [main] CustomerIntegrationTest - Starting CustomerIntegrationTest using Java 1.8.0_322 on DESKTOP-7AARSN1 with PID 15152 (started by Arman in E:\Intelij\BlueHarvest\Accounts)
+[INFO ] 2022-05-18 04:42:39.197 [main] CustomerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-05-18 04:42:42.585 [main] CustomerIntegrationTest - Started CustomerIntegrationTest in 3.456 seconds (JVM running for 48.892)
+[INFO ] 2022-05-18 04:43:07.481 [main] AccountIntegrationTest - Starting AccountIntegrationTest using Java 1.8.0_322 on DESKTOP-7AARSN1 with PID 7636 (started by Arman in E:\Intelij\BlueHarvest\Accounts)
+[INFO ] 2022-05-18 04:43:07.490 [main] AccountIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-05-18 04:43:22.664 [main] AccountIntegrationTest - Started AccountIntegrationTest in 15.893 seconds (JVM running for 19.553)
+[INFO ] 2022-05-18 04:43:23.263 [main] AccountController - Account API Request: AccountDto : com.banking.accounts.domain.account.dto.AccountDto@4626f584
+[INFO ] 2022-05-18 04:43:23.810 [main] AccountService - A new Account added successfully, Account Number : com.banking.accounts.domain.account.entity.AccountNumber@4964d801
+[INFO ] 2022-05-18 04:43:23.831 [main] TransactionService - A New Transaction Saved successfully, Transaction ID : 2
+[INFO ] 2022-05-18 04:43:23.841 [main] AccountService - Account Balance with Number:com.banking.accounts.domain.account.entity.AccountNumber@4964d801has been updated
+[INFO ] 2022-05-18 04:43:23.855 [main] TransactionService - Transaction Status Updated to :Confirmed successfully, Transaction ID : 2
