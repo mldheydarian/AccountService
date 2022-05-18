@@ -18,10 +18,11 @@ import java.util.List;
 
 public class AccountFactory implements IAccountFactory  {
 
+    private final IAccountTypeRepository accountTypeRepository;
+
     public AccountFactory(IAccountTypeRepository accountTypeRepository) {
         this.accountTypeRepository = accountTypeRepository;
     }
-    private final IAccountTypeRepository accountTypeRepository;
 
 
     public Account createAccount(AccountDto accountDto) {
