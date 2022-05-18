@@ -22,10 +22,6 @@ public abstract class Account {
     @GeneratedValue(strategy = GenerationType.AUTO)
     protected Integer id;
 
-   /* @Embedded
-    @AttributeOverrides({
-            @AttributeOverride( name = "number", column = @Column(name = "AccountNumber"))
-    })*/
     @NotNull
     protected AccountNumber accountNumber;
 
