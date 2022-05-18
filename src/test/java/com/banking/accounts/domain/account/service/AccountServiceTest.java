@@ -45,7 +45,7 @@ class AccountServiceTest {
             add(new AccountType((long) 1, EnumAccountType.CurrentAccount, BigDecimal.valueOf(100)));
             add(new AccountType((long) 2, EnumAccountType.SavingAccount, BigDecimal.valueOf(100)));
         }};
-        currentAccountDto = new AccountDto(1, EnumAccountType.CurrentAccount, BigDecimal.valueOf(10),"Arman.heydarian@gmail.com", calendar.getTime());
+        currentAccountDto = new AccountDto(1, EnumAccountType.CurrentAccount, BigDecimal.valueOf(10));
         currentAccount = new CurrentAccount(currentAccountDto,accountTypeList.get(0));
         currentAccount.setId(1);
     }

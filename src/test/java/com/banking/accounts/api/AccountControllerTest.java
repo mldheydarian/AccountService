@@ -40,13 +40,11 @@ class AccountControllerTest {
 
     @BeforeEach
     void setUp() {
-        Calendar calendar = Calendar.getInstance();
-        calendar.set(1991, 9, 21 );
         ArrayList<AccountType> accountTypeList = new ArrayList<AccountType>() {{
             add(new AccountType((long) 1, EnumAccountType.CurrentAccount, BigDecimal.valueOf(100)));
             add(new AccountType((long) 2, EnumAccountType.SavingAccount, BigDecimal.valueOf(10)));
         }};
-        currentAccountDto = new AccountDto(1, EnumAccountType.CurrentAccount, BigDecimal.valueOf(10),"Arman.heydarian@gmail.com", calendar.getTime());
+        currentAccountDto = new AccountDto(1, EnumAccountType.CurrentAccount, BigDecimal.valueOf(10));
         currentAccount = new CurrentAccount(currentAccountDto,accountTypeList.get(0));
         currentAccount.setId(1);
         currentAccount.setBalance(BigDecimal.valueOf(10));

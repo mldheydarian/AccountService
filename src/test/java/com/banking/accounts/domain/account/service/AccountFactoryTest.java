@@ -33,10 +33,8 @@ class AccountFactoryTest {
     @BeforeEach
     void setUp() {
         accountFactory = new AccountFactory(mockAccountTypeRepository);
-        Calendar calendar = Calendar.getInstance();
-        calendar.set(1991, 9, 21 );
-        currentAccountDto = new AccountDto(1, EnumAccountType.CurrentAccount, BigDecimal.valueOf(10),"Arman.heydarian@gmail.com", calendar.getTime());
-        savingAccountDto = new AccountDto(1, EnumAccountType.SavingAccount, BigDecimal.valueOf(10),"Arman.heydarian@gmail.com", calendar.getTime());
+        currentAccountDto = new AccountDto(1, EnumAccountType.CurrentAccount, BigDecimal.valueOf(10));
+        savingAccountDto = new AccountDto(1, EnumAccountType.SavingAccount, BigDecimal.valueOf(10));
         accountTypeList = new ArrayList<AccountType>(){{
              add(new AccountType((long)1,EnumAccountType.CurrentAccount,BigDecimal.valueOf(100)));
              add(new AccountType((long)2,EnumAccountType.SavingAccount,BigDecimal.valueOf(100)));

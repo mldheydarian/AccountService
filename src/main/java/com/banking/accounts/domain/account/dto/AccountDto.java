@@ -25,11 +25,4 @@ public class AccountDto {
     @DecimalMin(value = "0.0")
     private BigDecimal initialCredit;
 
-    @Email
-    @NotEmpty
-    private String email;
-
-    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
-    @JsonFormat(pattern = "yyyy-MM-dd")
-    private Date birthDate;
 }
