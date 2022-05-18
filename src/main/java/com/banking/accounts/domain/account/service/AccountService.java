@@ -3,7 +3,6 @@ package com.banking.accounts.domain.account.service;
 import com.banking.accounts.domain.account.dto.AccountDto;
 import com.banking.accounts.domain.account.entity.Account;
 import com.banking.accounts.domain.account.repository.IAccountRepository;
-import com.banking.accounts.domain.transaction.service.ITransactionService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -15,16 +14,15 @@ import org.apache.logging.log4j.Logger;
 
 @Service
 @AllArgsConstructor
+@Transactional
 public class AccountService implements IAccountService{
 
     // The constructor is handled by Lombok
     final IAccountFactory accountFactory;
     final IAccountRepository accountRepository;
-    final ITransactionService transactionService;
     final Logger logger;
 
     @Override
-    @Transactional
     public Account createAccount(AccountDto accountDto)
     {
         Account newAccount = accountFactory.createAccount(accountDto);
