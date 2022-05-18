@@ -4,7 +4,6 @@ import com.banking.accounts.domain.transaction.dto.TransactionDto;
 import com.banking.accounts.domain.transaction.entity.EnumTransactionStatus;
 import com.banking.accounts.domain.transaction.entity.EnumTransactionType;
 import com.banking.accounts.domain.transaction.entity.Transaction;
-import com.banking.accounts.domain.transaction.entity.WithdrawTransaction;
 import com.banking.accounts.domain.transaction.repository.ITransactionRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -35,7 +34,7 @@ class TransactionServiceTest {
     TransactionDto withDrawTransactionDto;
 
     Transaction newDepositTransaction;
-    Transaction newWithdarwTransaction;
+    Transaction newWithdrawTransaction;
     Transaction persistedTransaction ;
     @BeforeEach
     void setUp() {
@@ -45,8 +44,8 @@ class TransactionServiceTest {
         TransactionFactory transactionFactory = new TransactionFactory();
         newDepositTransaction = transactionFactory.createTransaction(depositTransactionDto);
         newDepositTransaction.setId(1);
-        newWithdarwTransaction = transactionFactory.createTransaction(withDrawTransactionDto);
-        newWithdarwTransaction.setId(1);
+        newWithdrawTransaction = transactionFactory.createTransaction(withDrawTransactionDto);
+        newWithdrawTransaction.setId(1);
 
     }
 
@@ -66,8 +65,8 @@ class TransactionServiceTest {
     @Test
     void createWithDrawTransaction() {
         // Arrange
-        Mockito.when(mockTransactionFactory.createTransaction(Mockito.any(TransactionDto.class))).thenReturn(newWithdarwTransaction);
-        Mockito.when(mockTransactionRepository.save(Mockito.any(Transaction.class))).thenReturn(newWithdarwTransaction);
+        Mockito.when(mockTransactionFactory.createTransaction(Mockito.any(TransactionDto.class))).thenReturn(newWithdrawTransaction);
+        Mockito.when(mockTransactionRepository.save(Mockito.any(Transaction.class))).thenReturn(newWithdrawTransaction);
         //Action
         persistedTransaction = transactionService.createTransaction(withDrawTransactionDto);
         //Assert
