@@ -1,4 +1,4 @@
-# Account Service
+# Account Services 
 This is a Java based Account Service which consists an API set for Adding Different Accounts including Current and Saving as well getting Customer Accounts.
 All the defined specification are done completely
 
